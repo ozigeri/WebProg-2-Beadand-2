@@ -3,7 +3,6 @@ require_once 'database/db.php';
 
 function handleSubjects($method) {
     global $pdo;
-
     if ($method === 'GET') {
         $stmt = $pdo->query("SELECT * FROM subjects");
         echo json_encode($stmt->fetchAll(PDO::FETCH_ASSOC));

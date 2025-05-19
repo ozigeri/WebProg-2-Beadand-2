@@ -71,7 +71,6 @@ function handleStudents($method, $id) {
             http_response_code(204);
         }
     }
-
     else {
         http_response_code(405);
         echo json_encode(["error" => "Nem támogatott metódus."]);

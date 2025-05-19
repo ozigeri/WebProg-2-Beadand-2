@@ -3,7 +3,6 @@ require_once 'database/db.php';
 
 function handleGrades($method, $id) {
     global $pdo;
-
     if ($method === 'GET') {
         if (isset($_GET['student_id'])) {
             $stmt = $pdo->prepare("SELECT * FROM students WHERE id = ?");

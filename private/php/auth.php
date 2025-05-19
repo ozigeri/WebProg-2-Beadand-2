@@ -8,6 +8,5 @@ function isAuthorized() {
         $token = $matches[1];
         return $token === 'titkos_token_123';
     }
-
     return false;
 }

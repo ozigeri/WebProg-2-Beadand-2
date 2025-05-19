@@ -1,6 +1,5 @@
 <?php
 header('Content-Type: application/json');
-
 require 'private/php/auth.php';
 
 if (!isAuthorized()) {
