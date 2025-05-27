@@ -8,7 +8,7 @@ function handleGrades($method, $id) {
             $stmt = $pdo->prepare("SELECT * FROM students WHERE id = ?");
             $stmt->execute([$_GET['student_id']]);
             if (!$stmt->fetch()) {
-                echo json_encode([]); // Üres tömb, ha nem létezik
+                echo json_encode([]);
                 return;
             }
 
